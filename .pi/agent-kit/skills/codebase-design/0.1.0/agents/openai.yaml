@@ -1,0 +1,4 @@
+interface:
+  display_name: "Codebase Design"
+  short_description: "Design deep modules at approved seams"
+  default_prompt: "Use $codebase-design to design the smallest deep-module interface for this approved architecture task."
