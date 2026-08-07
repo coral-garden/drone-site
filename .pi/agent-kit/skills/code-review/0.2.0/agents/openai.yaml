@@ -1,0 +1,5 @@
+interface:
+  display_name: "Code Review"
+  short_description: "Review behavior, standards, and tests"
+  default_prompt: "Use $code-review to independently review this bounded change scope."
+

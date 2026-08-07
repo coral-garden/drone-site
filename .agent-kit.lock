@@ -1,50 +1,66 @@
 schema_version = 1
-source_catalog_git_commit = "a9a4d944b445245272af2d3a69c3c49351177e23"
+source_catalog_git_commit = "1a5b1d7cbc2a8f7369ac388fedb801c3f1c4249d"
 source_catalog_worktree = "dirty"
-synced_at = "2026-08-03T20:50:20+08:00"
-profile = "dev-team@1.1.0"
+synced_at = "2026-08-07T21:36:03+08:00"
+profile = "static-site-dev-team@1.3.0"
 extensions = ["pi-team@0.4.0"]
-packs = ["core-dev@0.5.0"]
-agents = ["architect@0.4.0", "builder@0.4.0", "reviewer@0.4.0"]
-skills = ["code-review@0.1.0", "codebase-design@0.1.0", "diagnosing-bugs@0.1.0", "tdd@0.1.0"]
+packs = ["static-site-dev@1.4.0"]
+agents = ["architect@0.6.0", "builder@0.6.0", "reviewer@0.6.0", "website-copy-writer@1.0.0", "website-copy-editor@1.0.0"]
+skills = ["animejs@0.1.0", "brand-and-claim-review@0.1.0", "code-review@0.2.0", "codebase-design@0.1.0", "diagnosing-bugs@0.1.0", "frontend-design@0.2.0", "motion@0.1.0", "natural-web-copy@0.1.0", "source-bound-copywriting@0.1.0", "tdd@0.2.0"]
 multi_agent = "pi-team-profile"
 activation_region = "agent-kit:core-dev"
-activation_sha256 = "ccca5da481e02b18c189d63abb58469bff80a2fcda9ecb5d2053d329325ab025"
-verification = "pi-team-0.4-13-tests-typecheck-zero-vulnerability-audit-catalog-doctor-profile-dry-run-three-role-nano-agent-status-skill-resolution-hashes-html-and-diff-check-pass"
+activation_sha256 = "c1feffdff35b1b6738ae92882789e9e38b5d803f7ab6ac671cfff6ec635cef1a"
+verification = "motion-animejs-operator-approved-all-project-profile-pack-runtime-role-skill-project-package-role-extension-activation-hash-diff-check-empty-resync-pass; no-application-files-dependencies-or-tests-changed"
 
 [agent_skills]
+"architect" = []
+"builder" = []
+"reviewer" = []
 
 [agent_project_skills]
+"architect" = []
+"builder" = []
+"reviewer" = []
 
 [[files]]
 path = ".agent-kit.toml"
-source = "project-sync manifest dev-team@1.1.0 + core-dev@0.5.0"
-sha256 = "324c21396943dbd2be4f38ce1e53265a4b9fd17fe187b1973e4c8b7b3acb83ba"
+source = "project-sync manifest static-site-dev-team@1.3.0 + static-site-dev@1.4.0"
+sha256 = "33c29ff6049f283786fe640608d448c50136cb968cf0a826f756f879ff689d2f"
 
 [[files]]
-path = ".pi/agent-kit/skills/code-review/0.1.0/LICENSE"
-source = "workflows/agent-kit/catalog/skills/code-review/0.1.0/LICENSE"
+path = ".pi/agent-kit/skills/animejs/0.1.0/LICENSE"
+source = "workflows/agent-kit/catalog/skills/animejs/0.1.0/LICENSE"
+sha256 = "ac739d59d30d6382b3d25d8ec70f090ebbcc83ea048d621dd51611c75e623c90"
+
+[[files]]
+path = ".pi/agent-kit/skills/animejs/0.1.0/SKILL.md"
+source = "workflows/agent-kit/catalog/skills/animejs/0.1.0/SKILL.md"
+sha256 = "b97061c9746266caad57d2ae7518981e45a34036a6215bca4d8d48920fa21685"
+
+[[files]]
+path = ".pi/agent-kit/skills/animejs/0.1.0/references/guide.md"
+source = "workflows/agent-kit/catalog/skills/animejs/0.1.0/references/guide.md"
+sha256 = "737e05bdcc22545c05cabf14924a7ea6bfe9d35c69f22d81cfaa80daa6813875"
+
+[[files]]
+path = ".pi/agent-kit/skills/brand-and-claim-review/0.1.0/SKILL.md"
+source = "workflows/agent-kit/catalog/skills/brand-and-claim-review/0.1.0/SKILL.md"
+sha256 = "ea20f2bbfc672955a40efbd3126fa64afcc05714c0adde18d0a21d0f17c91631"
+
+[[files]]
+path = ".pi/agent-kit/skills/code-review/0.2.0/LICENSE"
+source = "workflows/agent-kit/catalog/skills/code-review/0.2.0/LICENSE"
 sha256 = "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
 
 [[files]]
-path = ".pi/agent-kit/skills/code-review/0.1.0/SKILL.md"
-source = "workflows/agent-kit/catalog/skills/code-review/0.1.0/SKILL.md"
-sha256 = "baada2f624532ddd04da989fa971eea3e5dc8ba2d3ce9d989ef3de4a58b13f98"
+path = ".pi/agent-kit/skills/code-review/0.2.0/SKILL.md"
+source = "workflows/agent-kit/catalog/skills/code-review/0.2.0/SKILL.md"
+sha256 = "eeb483a778bc6d12d8d05ad90b70a767e58b3011e071c2cfbc3365ff9bc9a0fa"
 
 [[files]]
-path = ".pi/agent-kit/skills/code-review/0.1.0/agents/openai.yaml"
-source = "workflows/agent-kit/catalog/skills/code-review/0.1.0/agents/openai.yaml"
-sha256 = "d564362303566217f40123a48c735319b33c04647ca8f0dfa9360ea59ae081da"
-
-[[files]]
-path = ".pi/agent-kit/skills/code-review/0.1.0/references/smell-baseline.md"
-source = "workflows/agent-kit/catalog/skills/code-review/0.1.0/references/smell-baseline.md"
-sha256 = "85e3c76767f934d5c3e4cf482d074268d1c1b53391fac0dc287112af3ca73202"
-
-[[files]]
-path = ".pi/agent-kit/skills/code-review/0.1.0/references/test-quality.md"
-source = "workflows/agent-kit/catalog/skills/code-review/0.1.0/references/test-quality.md"
-sha256 = "d7754f0b0476256db5b960d664c483ffce304e41c233f2a40f1d1f7cfdd1f33c"
+path = ".pi/agent-kit/skills/code-review/0.2.0/agents/openai.yaml"
+source = "workflows/agent-kit/catalog/skills/code-review/0.2.0/agents/openai.yaml"
+sha256 = "936e2fd6790fab87ae33291f8a3013f8119fa39f01724dab981e6f569cd115af"
 
 [[files]]
 path = ".pi/agent-kit/skills/codebase-design/0.1.0/LICENSE"
@@ -87,41 +103,106 @@ source = "workflows/agent-kit/catalog/skills/diagnosing-bugs/0.1.0/agents/openai
 sha256 = "a95f0d2e51f7613391e71b35110577b2acdd85201334524da2f6f7fffb803977"
 
 [[files]]
-path = ".pi/agent-kit/skills/tdd/0.1.0/LICENSE"
-source = "workflows/agent-kit/catalog/skills/tdd/0.1.0/LICENSE"
+path = ".pi/agent-kit/skills/frontend-design/0.2.0/LICENSE"
+source = "workflows/agent-kit/catalog/skills/frontend-design/0.2.0/LICENSE"
+sha256 = "5bb930405ab3ad7b8485f645aa0a08a59ef2e66ea827a8e5d51a7c6aa6f9db17"
+
+[[files]]
+path = ".pi/agent-kit/skills/frontend-design/0.2.0/SKILL.md"
+source = "workflows/agent-kit/catalog/skills/frontend-design/0.2.0/SKILL.md"
+sha256 = "b0bba7461ba38ea03fde2304d1e8500eb4b320586263220fe5a84b01e9a970cc"
+
+[[files]]
+path = ".pi/agent-kit/skills/frontend-design/0.2.0/references/component-contract.md"
+source = "workflows/agent-kit/catalog/skills/frontend-design/0.2.0/references/component-contract.md"
+sha256 = "2470d46e1d6d69cc0d92cce0117992a997d327b3ef17cbbf4f11239888ab46cc"
+
+[[files]]
+path = ".pi/agent-kit/skills/frontend-design/0.2.0/references/composition.md"
+source = "workflows/agent-kit/catalog/skills/frontend-design/0.2.0/references/composition.md"
+sha256 = "0ba93c098696e55c2c2e08e21388e509e8850d103683e5e021a9d27943f40703"
+
+[[files]]
+path = ".pi/agent-kit/skills/frontend-design/0.2.0/references/design-read-and-dials.md"
+source = "workflows/agent-kit/catalog/skills/frontend-design/0.2.0/references/design-read-and-dials.md"
+sha256 = "d88ad9c3af3bbd50277d27212c82bd707bc44c1831829ac8bcd6f4317b0c9639"
+
+[[files]]
+path = ".pi/agent-kit/skills/frontend-design/0.2.0/references/preflight.md"
+source = "workflows/agent-kit/catalog/skills/frontend-design/0.2.0/references/preflight.md"
+sha256 = "7a249dce6f7a27bbc2a92b5e2f12a876b12eedbbc6d031555c47a254681362e4"
+
+[[files]]
+path = ".pi/agent-kit/skills/frontend-design/0.2.0/references/tokens-and-style-guide.md"
+source = "workflows/agent-kit/catalog/skills/frontend-design/0.2.0/references/tokens-and-style-guide.md"
+sha256 = "1b902a335a8c0df7cf6d30df84d219d76e800528aa21da045ec3bd1097432d1a"
+
+[[files]]
+path = ".pi/agent-kit/skills/motion/0.1.0/LICENSE"
+source = "workflows/agent-kit/catalog/skills/motion/0.1.0/LICENSE"
+sha256 = "ba5a3c6a003c31220dd31ec4d03c54b74092833af3d1808c4ebc53c2cfd8ec8d"
+
+[[files]]
+path = ".pi/agent-kit/skills/motion/0.1.0/SKILL.md"
+source = "workflows/agent-kit/catalog/skills/motion/0.1.0/SKILL.md"
+sha256 = "a34570933e99c389c9ea721fbed6ef9264575e5668fbd795917a03ad2a910089"
+
+[[files]]
+path = ".pi/agent-kit/skills/motion/0.1.0/references/guide.md"
+source = "workflows/agent-kit/catalog/skills/motion/0.1.0/references/guide.md"
+sha256 = "810adb7a07c0072d0b5da8eb52daed8d646ef020a3e4d777b7826ea0a3ab5f55"
+
+[[files]]
+path = ".pi/agent-kit/skills/natural-web-copy/0.1.0/SKILL.md"
+source = "workflows/agent-kit/catalog/skills/natural-web-copy/0.1.0/SKILL.md"
+sha256 = "ed634a1e7f957a2bbcbbc3a117470d30ec307e40bf25679ce6f6db2c3ee036d0"
+
+[[files]]
+path = ".pi/agent-kit/skills/natural-web-copy/0.1.0/agents/openai.yaml"
+source = "workflows/agent-kit/catalog/skills/natural-web-copy/0.1.0/agents/openai.yaml"
+sha256 = "1d702b2b76aff48e02a17ba368a52fddc5ede1592944a962db86378854273780"
+
+[[files]]
+path = ".pi/agent-kit/skills/source-bound-copywriting/0.1.0/SKILL.md"
+source = "workflows/agent-kit/catalog/skills/source-bound-copywriting/0.1.0/SKILL.md"
+sha256 = "962e5851a6a7c579fa142b390588cfef3efd2c8335ad814b4f508ef14903f678"
+
+[[files]]
+path = ".pi/agent-kit/skills/tdd/0.2.0/LICENSE"
+source = "workflows/agent-kit/catalog/skills/tdd/0.2.0/LICENSE"
 sha256 = "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5"
 
 [[files]]
-path = ".pi/agent-kit/skills/tdd/0.1.0/SKILL.md"
-source = "workflows/agent-kit/catalog/skills/tdd/0.1.0/SKILL.md"
-sha256 = "d272ab99b67e4bd3699bc0dd8731adb0fb4bd2022b85fb0e39fda5462bd44152"
+path = ".pi/agent-kit/skills/tdd/0.2.0/SKILL.md"
+source = "workflows/agent-kit/catalog/skills/tdd/0.2.0/SKILL.md"
+sha256 = "76d46721bb7c35d763d3b24f481ce4cca30cb52855b9a2d0b9bc8f033ea9b4db"
 
 [[files]]
-path = ".pi/agent-kit/skills/tdd/0.1.0/agents/openai.yaml"
-source = "workflows/agent-kit/catalog/skills/tdd/0.1.0/agents/openai.yaml"
-sha256 = "a1ab232eb9fe52c32c1e0afc381d64bdbc19ca56ea4a83a7913e6527423b3798"
-
-[[files]]
-path = ".pi/agent-kit/skills/tdd/0.1.0/references/mocking.md"
-source = "workflows/agent-kit/catalog/skills/tdd/0.1.0/references/mocking.md"
-sha256 = "2460ad068b7a865bc17d88b25f12d9e7eb1bd856d53a9dc7eb7ed852f85173c5"
-
-[[files]]
-path = ".pi/agent-kit/skills/tdd/0.1.0/references/test-quality.md"
-source = "workflows/agent-kit/catalog/skills/tdd/0.1.0/references/test-quality.md"
-sha256 = "8cc82d1e89b67c0b99874fb21fc5305dff7beb2d20dac5cafb46c863a4751214"
+path = ".pi/agent-kit/skills/tdd/0.2.0/agents/openai.yaml"
+source = "workflows/agent-kit/catalog/skills/tdd/0.2.0/agents/openai.yaml"
+sha256 = "b3006dff1d5580de060ac959dac581b406b48b922bdc512028b26525ec507d45"
 
 [[files]]
 path = ".pi/nano-team/team/architect.yaml"
-source = "workflows/agent-kit/catalog/agents/architect/0.4.0.yaml"
-sha256 = "b52fd2b05ce81e377d10a5f6d05f88d80e702107c1e2083cf481c8352828eceb"
+source = "workflows/agent-kit/catalog/agents/architect/0.6.0.yaml"
+sha256 = "55dba2b389dc44020e2c1961cde2c5f0250d44b737f9d9aa7337d907e003a144"
 
 [[files]]
 path = ".pi/nano-team/team/builder.yaml"
-source = "workflows/agent-kit/catalog/agents/builder/0.4.0.yaml"
-sha256 = "84500286921dc4a7c598eeb899d0732892616b8a4d307ce88dcbcc54986d77f7"
+source = "workflows/agent-kit/catalog/agents/builder/0.6.0.yaml + overlays"
+sha256 = "cb77726c7403667864a8baeb6b6bcb3dd479b8be5c2689cee96ce245ccd60b82"
 
 [[files]]
 path = ".pi/nano-team/team/reviewer.yaml"
-source = "workflows/agent-kit/catalog/agents/reviewer/0.4.0.yaml"
-sha256 = "80a22697f70301b9c1c269543c5ddad93c3c2e10c502b4be57a71faa333bca0f"
+source = "workflows/agent-kit/catalog/agents/reviewer/0.6.0.yaml"
+sha256 = "894e937b547bede82f7b4c102c36c952a8d46249a37378a7791d12b3be0306f5"
+
+[[files]]
+path = ".pi/nano-team/team/website-copy/editor.yaml"
+source = "workflows/agent-kit/catalog/agents/website-copy-editor/1.0.0.yaml"
+sha256 = "4a8b8008f12ed1222cc7b09be8829fd1b2ad5e1cab5106ddb6db45126bd1bdb7"
+
+[[files]]
+path = ".pi/nano-team/team/website-copy/writer.yaml"
+source = "workflows/agent-kit/catalog/agents/website-copy-writer/1.0.0.yaml"
+sha256 = "ed2ab45f0660d04cadb2056794ca2088ca0d5f048955bdf34a4d9f5794199743"
